@@ -16,6 +16,7 @@ header{
     display: flex;
     width: 100%;
     position: fixed;
+    z-index: 3;
 }
 
 nav{
@@ -56,16 +57,143 @@ main{
     height: 1000px;
 }
 
-/* Footer */
+/* main */
 
-footer{
+.container {
     display: flex;
-    color: aliceblue;
-    padding: 2rem;
-    padding-inline: 3rem;
-    background-color: rgb(42,42,42);
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px;
+    width: 100%;
 }
 
-footer p{
-    font-size: x-large;
+.banner {
+    width: 100vw;
+}
+
+.container h1 {
+    position: absolute;
+    font-family: 'Arial', sans-serif;
+    font-size: 65px;
+    font-weight: 900;
+    color: #fff;
+    width: 600px;
+}
+
+.container-calc {
+    position: absolute;
+    background-color: #43A380;
+    margin-top: 390px;
+    padding: 10px 25px 25px;
+    border-radius: 6px;
+    z-index: 1;
+    -webkit-box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.75);
+}
+
+.container-calc h2 {
+    margin-bottom: 10px;
+    color: #fff;
+    font-weight: 700;
+    font-family: 'Arial', sans-serif;
+}
+
+form input {
+    border: none;
+    height: 30px;
+    width: 150px;
+    border-radius: 5px;
+    margin-right: 10px;
+    padding: 10px;
+    color: #000;
+    font-weight: 700;
+}
+
+form input::placeholder {
+    font-family: 'Arial', sans-serif;
+    font-weight: 700;
+}
+
+form button {
+    background-color: #333333;
+    color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+
+/* Footer */
+.container-footer{
+	max-width: 1170px;
+	margin:auto;
+}
+.linha{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.rodape{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.coluna-rodape{
+   width: 25%;
+   padding: 0 15px;
+}
+.coluna-rodape h4{
+	font-size: 18px;
+	color: #ffffff;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.coluna-rodape h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.coluna-rodape ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.coluna-rodape ul li a{
+	font-size: 16px;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.coluna-rodape ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.coluna-rodape .links-sociais a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.coluna-rodape .links-sociais a:hover{
+	color: #24262b;
+	background-color: #ffffff;
 }

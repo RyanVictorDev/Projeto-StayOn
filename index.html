@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <title>StayOn</title>
 </head>
 <body>
+    <!-- nav -->
     <header>
         <nav id="nav">
             <p>StayOn</p>
@@ -19,14 +21,107 @@
             </div>
         </nav>
     </header>
+    <!-- main -->
+    <main>
+        <section class="container">
+            <h1>Calculadora da Média do ENEM</h1>
+            <img class="banner" src="./img/banner.png" alt="">
 
-    <main></main>
+            <div class="container-calc">
+                <h2>Coloque aqui suas notas e descubra a sua média da ENEM</h2>
+                <form action="#">
 
-    <footer>
-        <div class="contatos">
-            <p>Contatos</p>
+                    <input type="number" placeholder="Matemática:" id="matematica" max="999" min="0" required>
+
+                    <input type="number" placeholder="Humanas:" id="humanas" max="999" min="0" required>
+
+                    <input type="number" placeholder="Línguagens:" id="linguagens" max="999" min="0" required>
+
+                    <input type="number" placeholder="Natureza:" id="natureza" max="999" min="0" required>
+
+                    <input type="number" placeholder="Redação:" id="redacao" max="1000" min="0" required>
+
+                    <button type="button" onclick="cursosUece()">Descobrir minha nota</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- footer -->
+    <footer class="rodape">
+        <div class="container-footer">
+            <div class="linha">
+                <div class="coluna-rodape">
+                    <h4>ESTUDE PARA A UECE</h4>
+                    <ul>
+                        <li><a href="#">Painel do Aluno</a></li>
+                        <li><a href="#">Matérias</a></li>
+                        <li><a href="#">Correção de Redação</a></li>
+                        <li><a href="#">Aulas ao Vivo</a></li>
+                    </ul>
+                </div>
+                <div class="coluna-rodape">
+                    <h4>MATERIAIS GRATUITOS</h4>
+                    <ul>
+                        <li><a href="#">Resumos para a UECE</a></li>
+                        <li><a href="#">Gabarito UECE</a></li>
+                        <li><a href="#">Calculadora de Notas UECE</a></li>
+                        <li><a href="#">Simulador UECE</a></li>
+                        <li><a href="#">Dicas de preparação</a></li>
+                    </ul>
+                </div>
+                <div class="coluna-rodape">
+                    <h4>EVENTOS E PALESTRAS</h4>
+                    <ul>
+                        <li><a href="#">Palestras e Seminários</a></li>
+                        <li><a href="#">Atividades Culturais</a></li>
+                        <li><a href="#">Eventos Esportivos</a></li>
+                        <li><a href="#">Feiras e Exposições</a></li>
+                    </ul>
+                </div>
+                <div class="coluna-rodape">
+                    <h4>ENTRE EM CONTATO</h4>
+                    <div class="links-sociais">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
         </div>
-    </footer>
+   </footer>
 
     <script src="js/script.js"></script>
 </body>
