@@ -23,7 +23,7 @@ nav{
     background-color: rgba(48, 48, 48, 0);
     width: 100%;
     display: flex;
-    padding: 1rem;
+    padding: 0.2rem;
     padding-inline: 5%;
     margin-inline: auto;
     color: rgb(0, 0, 0);
@@ -31,8 +31,8 @@ nav{
     transition: 1s ease;
 }
 
-nav p{
-    font-size: xx-large;
+nav img{
+    width: 80px;
 }
 
 nav div{
@@ -41,6 +41,10 @@ nav div{
     gap: 1.5rem;
 }
 
+div a {
+    color: white;
+    font-size: 1.2rem;
+}
 .rolagem{
     background-color: rgb(48, 48, 48);
     width: 90%;
@@ -77,11 +81,12 @@ main{
     flex-direction: column;
     align-items: center;
     width: 100%;
+    height: 100vh;
 }
 
 .container p {
     font-family: 'Arial', sans-serif;
-    font-size: 65px;
+    font-size: 85px;
     font-weight: 900;
     text-shadow: 1px 1px rgb(0, 204, 255);
     color: #ffffff;
@@ -91,7 +96,7 @@ main{
 .container-calc {
     max-width: 80%;
     background-color: #43A380; 
-    padding: 10px 25px 25px;
+    padding: 10px 140px 40px;
     border-radius: 6px;
     z-index: 1;
     -webkit-box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.75);
@@ -100,7 +105,7 @@ main{
 }
 
 .container-calc h2 {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     color: #fff;
     font-weight: 700;
     font-family: 'Arial', sans-serif;
@@ -109,14 +114,15 @@ main{
 form{
     display: flex;
     flex-wrap: wrap;
-    gap: 0.5rem;
+    align-items: center;
+    gap: 1rem;
 }
 
 
 form input {
     border: none;
-    height: 30px;
-    width: 150px;
+    height: 40px;
+    width: 160px;
     border-radius: 5px;
     margin-right: 10px;
     padding: 10px;
@@ -132,23 +138,135 @@ form input::placeholder {
 form button {
     background-color: #333333;
     color: #fff;
-    padding: 15px;
-    border-radius: 5px;
+    padding: 14px;
+    border-radius: 15px;
     border: none;
     cursor: pointer;
 }
 
+/* sobre */
+.sobre {
+    height: auto;
+    padding-top: 100px;
+    margin:  0px 200px 0px;
+}
 
+.sobre .titulo {
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Arial', sans-serif;
+}
 
+.textos {
+    margin-top: 100px;
+}
+
+.sobre .texto1 {
+    width: 45%;
+    line-height: 1.9;
+    font-size: 1.1rem;
+    text-align: justify;
+    float: left;
+    font-family: 'Arial', sans-serif;
+
+}
+
+.sobre .texto2 {
+    width: 45%;
+    line-height: 1.9;
+    font-size: 1.1rem;
+    text-align: justify;
+    float: right;        
+    font-family: 'Arial', sans-serif;
+}
+
+.img {
+    text-align: center;
+}
+
+.sobre .img-uece-sobre {
+    height: 400px;
+    margin-top: 50px;
+    -webkit-box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
+
+}
+
+/* Cursos */
+.cursos {
+    height: auto;
+    margin: 80px 200px;
+    clear: both;
+}
+
+.cursos .titulo {
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    padding-top: 4rem;
+}
+.cards {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   gap: 50px;
+   margin-top: 90px;
+   justify-content: center; 
+   align-items: center;
+}
+
+.card  {
+    height: 217px;
+    width: 268px;
+    border-radius: 10px;
+    border: 1px solid #ccc; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: 500ms ease-out;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.img-card {
+    width: 200px;
+}
+
+.card .img-card {
+    width: 100%;
+    height: auto;
+}
+    
+.texto-card h3 {
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 30px;
+}
 
 /* Footer */
+
+footer {
+ /* Adiciona esta propriedade */
+    bottom: 0; /* Posiciona o footer na parte inferior da página */
+    width: 100%; /* Garante que o footer ocupe toda a largura */
+    background-color: #24262b;
+    padding: 70px 0;
+    clear: both;
+    margin-top: 150rem;
+}
+
 .container-footer{
 	max-width: 1170px;
 	margin:auto;
+    clear: both;
 }
 .linha{
 	display: flex;
 	flex-wrap: wrap;
+    
 }
 ul{
 	list-style: none;

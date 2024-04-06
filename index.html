@@ -1,53 +1,186 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <title>StayOn</title>
 </head>
+
 <body>
     <!-- nav -->
     <header>
         <nav id="nav">
-            <p>StayOn</p>
+            <img src="./img/logo.png" alt="Logo">
             <div>
-                <a href="template/pagina.html">Home</a>
-                <a href="#">Vestibulares</a>
-                <a href="#">ENEM</a>
-                <a href="#">UECE</a>
-                <a href="#">Sobre</a>
+                <a href="#home">Home</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#cursos">Cursos</a>
+                <a href="#footer">Contato</a>
             </div>
         </nav>
     </header>
     <!-- main -->
     <main>
-        <section class="container">
-            <p>Calculadora da Média do ENEM</p>
+        <!-- home - calculadora -->
+        <section class="container" id="home">
+            <p>Calculadora da Média da UECE</p>
             <!-- <img class="banner" src="./img/banner.png" alt=""> -->
 
             <div class="container-calc">
-                <h2>Coloque aqui suas notas e descubra a sua média da ENEM</h2>
+                <h2>Coloque aqui suas notas e descubra a sua média da UECE</h2>
                 <form action="#">
 
-                    <input type="number" placeholder="Matemática:" id="matematica" max="999" min="0" required>
-
                     <input type="number" placeholder="Humanas:" id="humanas" max="999" min="0" required>
-
                     <input type="number" placeholder="Línguagens:" id="linguagens" max="999" min="0" required>
-
                     <input type="number" placeholder="Natureza:" id="natureza" max="999" min="0" required>
-
-                    <input type="number" placeholder="Redação:" id="redacao" max="1000" min="0" required>
-
-                    <button type="button" onclick="cursosUece()">Descobrir minha nota</button>
+                    <button type="button" onclick="cursosUece()">CALCULAR</button>
                 </form>
             </div>
         </section>
+
+        <!-- sobre -->
+        <section class="sobre" id="sobre">
+            <p class="titulo">Sobre</p>
+            <div class="textos">
+                <p class="texto1">
+                    Pablo e Ryan uniram suas habilidades em programação para criar uma aplicação web que visa
+                    descomplicar o entendimento do ENEM e da UECE. Com conhecimentos sólidos em HTML, CSS e JavaScript,
+                    a dupla está trabalhando arduamente para oferecer uma plataforma intuitiva e informativa. O foco
+                    principal do projeto é fornecer uma explicação abrangente sobre o ENEM e a UECE, tornando esses
+                    processos mais acessíveis para o público em geral. Através de uma interface amigável e recursos
+                    interativos, os usuários poderão explorar informações sobre os
+                <p class="texto2">
+                    exames, desde o funcionamento básico até dicas valiosas para se preparar adequadamente.
+
+                    Com a aplicação em desenvolvimento, Pablo e Ryan estão comprometidos em simplificar a jornada dos
+                    estudantes que buscam compreender melhor esses importantes exames educacionais. Seu trabalho
+                    representa não apenas um projeto técnico, mas também um esforço para promover a igualdade de acesso
+                    à educação, capacitando indivíduos com o conhecimento necessário para alcançar seus objetivos
+                    acadêmicos.
+                </p>
+            </div>
+            <div class="img">
+                <img class="img-uece-sobre" src="./img/img-uece.jpg" alt="Imagem da empresa UECE">
+            </div>
+            <div class="textos">
+                <p class="texto1">
+                    A Universidade Estadual do Ceará (UECE) é uma instituição pública de ensino superior localizada no
+                    estado do Ceará, Brasil. Fundada em 1975, a UECE tem como missão principal oferecer educação de
+                    qualidade, pesquisa e extensão para a comunidade cearense e além.
+                    A UECE oferece uma ampla gama de cursos de graduação, pós-graduação e extensão, abrangendo áreas
+                    como ciências humanas, ciências exatas, ciências biológicas, engenharias, artes, educação, saúde,
+                    entre outras. Seus cursos são ministrados por professores altamente
+
+                <p class="texto2">
+                    exames, desde o funcionamento básico até dicas valiosas para se preparar adequadamente.
+
+                    qualificados e a infraestrutura da universidade é voltada para proporcionar um ambiente propício ao
+                    aprendizado e à pesquisa.Além disso, a UECE desempenha um papel importante no desenvolvimento
+                    socioeconômico da região, através de parcerias com órgãos governamentais, empresas e organizações da
+                    sociedade civil. A universidade também contribui para a produção de conhecimento científico e
+                    tecnológico, bem como para a formação de profissionais capacitados e cidadãos conscientes de seu
+                    papel na sociedade.
+                </p>
+            </div>
+        </section>
+
+        <!-- cursos -->
+        <section class="cursos" id="cursos">
+            <p class="titulo">Cursos</p>
+            <div class="cards">
+                    <div class="card">
+                        <img class="img-card" src="./img/sistemas.png" alt="">
+                        <div class="texto-card">
+                            <h3>Ciências da Computação</h3>
+                        </div>
+                    </div>
+                
+                    <div class="card">
+                        <img class="img-card" src="./img/Ciencias-Contabeis 1.png" alt="">
+                        <div class="texto-card">
+                            <h3>Ciências Contábeis</h3>
+                        </div>
+                    </div>
+                
+                    <div class="card">
+                        <img class="img-card" src="./img/biomedicina.png" alt="">
+                        <div class="texto-card">
+                            <h3>Ciências Biológicas</h3>
+                        </div>
+                    </div>
+                
+                    <div class="card">
+                        <img class="img-card" src="./img/geografia.png" alt="">
+                        <div class="texto-card">
+                            <h3>Geografia</h3>
+                        </div>
+                    </div>
+                
+                    <div class="card">
+                        <img class="img-card" src="./img/enfermagem.png" alt="">
+                        <div class="texto-card">
+                            <h3>Enfermagem</h3>
+                        </div>
+                    </div>
+                
+                    <div class="card">
+                        <img class="img-card" src="./img/educacao.png" alt="">
+                        <div class="texto-card">
+                            <h3>Educação Física</h3>
+                        </div>
+                    </div>
+                
+                    <div class="card">
+                        <img class="img-card" src="./img/fisioterapia.png" alt="">
+                        <div class="texto-card">
+                            <h3>Medicina</h3>
+                        </div>
+                    </div>
+                
+                    <div class="card">
+                        <img class="img-card" src="./img/psicologia.png" alt="">
+                        <div class="texto-card">
+                            <h3>Psicologia</h3>
+                        </div>
+                    </div>
+                
+                    <div class="card">
+                        <img class="img-card" src="./img/veterinaria.png" alt="">
+                        <div class="texto-card">
+                            <h3>Medicina Veterinária</h3>
+                        </div>
+                    </div>
+                
+                    <div class="card">
+                        <img class="img-card" src="./img/nutricao.png" alt="">
+                        <div class="texto-card">
+                            <h3>Nutrição</h3>
+                        </div>
+                    </div>
+                
+                    <div class="card">
+                        <img class="img-card" src="./img/administracao.png" alt="">
+                        <div class="texto-card">
+                            <h3>Administração</h3>
+                        </div>
+                    </div>
+                
+                    <div class="card">
+                        <img class="img-card" src="./img/fisica.png" alt="">
+                        <div class="texto-card">
+                            <h3>Física</h3>
+                        </div>
+                    </div>
+            </div>
+        </section>
+
     </main>
     <!-- footer -->
-    <footer class="rodape">
+    <footer class="rodape" id="footer">
         <div class="container-footer">
             <div class="linha">
                 <div class="coluna-rodape">
@@ -93,4 +226,5 @@
 
     <script src="js/script.js"></script>
 </body>
+
 </html>

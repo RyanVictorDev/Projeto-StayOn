@@ -19,13 +19,11 @@ function cursosUece() {
         "Psicologia": 660.24
     };
 
-    var matematica = parseFloat(document.getElementById("matematica").value);
     var humanas = parseFloat(document.getElementById("humanas").value);
     var linguagens = parseFloat(document.getElementById("linguagens").value);
     var natureza = parseFloat(document.getElementById("natureza").value);
-    var redacao = parseFloat(document.getElementById("redacao").value);
 
-    var media = (matematica + humanas + linguagens + natureza + redacao) / 5;
+    var media = (humanas + linguagens + natureza) / 3;
 
     var cursosPassados = [];
 
